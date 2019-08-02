@@ -191,6 +191,7 @@ def make_rpc_func(bin_dir, data_dir, chain):
 
 
 def waitForRPC(rpc_func, wallet=None):
+    time.sleep(350)
     for i in range(5):
         try:
             rpc_func('getwalletinfo')
